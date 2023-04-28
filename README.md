@@ -1,5 +1,7 @@
 # README
 
+![image](https://user-images.githubusercontent.com/6614489/235061911-845f5851-ecd7-4c22-925f-74a924a975ea.png)
+
 ## tab_query.py
 
 `tab_query.py` is a command-line tool to query split-intein Gal4 gene-markers for Fly Cell Atlas clusters. Exactly two markers per cluster are returned. More than one set of options is returned with teh top hit being the strongest. The script will automatically download the relevant data in the user's directory.
@@ -37,7 +39,6 @@ python tab_query.py  --cluster "enteroblast" --organ Gut
 
 `tab_query.py` requires the following dependencies:
 
-- argparse
 - pandas
 - numpy
 - scanpy
@@ -46,7 +47,7 @@ python tab_query.py  --cluster "enteroblast" --organ Gut
 You can install these dependencies using pip. For example:
 
 ```
-pip install argparse pandas numpy scanpy anndata
+pip install pandas numpy scanpy anndata
 ```
 
 Note: If you use `tab_query.py` in your research, please consider citing the following preprint and paper: [split-intein Gal4 provides intersectional genetic labeling that is fully repressible by Gal80](https://www.biorxiv.org/content/10.1101/2023.03.24.534001)
