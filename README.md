@@ -26,9 +26,10 @@ python tab_query.py --describe
 The arguments for the command are as follows:
 
 - `--species`: The species to query. The only available option right now is 'dm' (Drosophila melanogaster) and the default value is 'dm'.
-- `--organ`: The organ to query. These are the organs corresponding to which the bulk RNA-seq data will be used. Use the `--describe` option to see the available choices.
+- `--organ`: The organ to query. These are the organs corresponding to which the bulk RNA-seq data will be used. This needs to match (in your judgement) the single-cell cluster you specify. Use the `--describe` option to see the available choices.
 - `--cluster`: The cluster to query. These are currently taken from the Fly Cell Atlas annotation. Use the `--describe` option to see the available choices.
 - `--params`: A list of key:value pairs of parameters. These parameters will be used to filter the data before the query. Each pair should be separated by a space. See the the DEFAULT_PARAMS variable in code.
+- `--describe`: Provides the list of organs and Fly Cell Atlas currently accepted. 
 
 ## Examples
 
