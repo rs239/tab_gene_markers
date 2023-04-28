@@ -8,7 +8,7 @@
  
   - Exactly two markers per cluster are returned. This is important for the split-intein Gal4 protocol. 
   - More than one set of results is returned, with the top hit being the strongest. 
-  - The script will automatically download the relevant data in the user's directory. By default, two files will be downloaded in a data/ subfolder. You will need approx 4.5G of disk space.
+  - The script will automatically download the necessary data in the user's directory. By default, two files will be downloaded in a data/ subfolder. You will need approx 4.5G of disk space.
 
 ## Usage
 
