@@ -4,7 +4,11 @@
 
 ## tab_query.py
 
-`tab_query.py` is a command-line tool to query split-intein Gal4 gene-markers for Fly Cell Atlas clusters. Exactly two markers per cluster are returned. More than one set of options is returned with teh top hit being the strongest. The script will automatically download the relevant data in the user's directory.
+`tab_query.py` is a command-line tool to query split-intein Gal4 gene-markers for Fly Cell Atlas clusters. 
+ 
+  - Exactly two markers per cluster are returned. This is important for the split-intein Gal4 protocol. 
+  - More than one set of results is returned, with the top hit being the strongest. 
+  - The script will automatically download the relevant data in the user's directory. By default, two files will be downloaded in a data/ subfolder. You will need approx 4.5G of disk space.
 
 ## Usage
 
