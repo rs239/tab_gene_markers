@@ -28,7 +28,7 @@ The arguments for the command are as follows:
 
 ## Examples
 
-To query the gene expression data for the 4th age group of male Drosophila melanogaster antennae, type the following command:
+To query the gene markers for enteroblast cells in the fly gut:
 
 ```
 python tab_query.py  --cluster "enteroblast" --organ Gut
