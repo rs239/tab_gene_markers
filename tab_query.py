@@ -381,7 +381,15 @@ def main():
         download_data(params_dict)
 
         ydf = query_one_cluster(args.species, args.organ, args.cluster, params_dict)
-        ydf.to_csv(sys.stdout, index=False, float_format='%g')
+        if ydf is None or ydf.shape[0]==0:
+            print("""No results found, unfortunately. Try changing the parameters. 
+The default param values are   
+    bulk_rnaseq_tau_thresh:0.5  
+    scrnaseq_inv_dispersion_quantile:0.25
+Try decreasing both, possibly all the way to zero.""")
+    
+        else:
+            ydf.to_csv(sys.stdout, index=False, float_format='%g')
 
 
 
